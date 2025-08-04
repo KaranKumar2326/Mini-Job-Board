@@ -29,7 +29,7 @@ const JobSchema = new mongoose.Schema({
   },
   postedDate: {
     type: Date,
-    default: Date.now, // Automatically set when a job is created
+    default: Date.now, 
   },
 });
 
