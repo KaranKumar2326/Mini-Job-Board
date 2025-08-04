@@ -18,7 +18,7 @@ const JobList = ({ filters }) => {
         if (filters.type && filters.type !== 'All') params.type = filters.type
         
         // Update API endpoint to match your backend
-        const { data } = await axios.get('http://localhost:5000/api/jobs', { params })
+        const { data } = await axios.get('https://mini-job-board-883t.onrender.com/api/jobs', { params })
         setJobs(data)
       } catch (err) {
         console.error('Error fetching jobs:', err)

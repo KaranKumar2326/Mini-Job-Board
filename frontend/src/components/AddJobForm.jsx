@@ -32,7 +32,7 @@ const AddJobForm = () => {
     setErrors([])
     
     try {
-      await axios.post('http://localhost:5000/api/jobs', formData)
+      await axios.post('https://mini-job-board-883t.onrender.com/api/jobs', formData)
       navigate('/')
     } catch (err) {
       console.error('Error submitting job:', err)
